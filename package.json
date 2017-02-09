@@ -1,0 +1,19 @@
+{
+  "name": "typescript-playground",
+  "description": "A setup for the upcoming TS workshop",
+  "version": "0.0.1",
+  "scripts": {
+    "ts:build": "node ./node_modules/typescript/bin/tsc --p ./ts",
+    "ts:watch": "watch \"npm run ts:build\" ts/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nansen/typescript-playground.git"
+  },
+  "devDependencies": {
+    "connect": "^3.5.0",
+    "serve-static": "^1.11.2",
+    "typescript": "^2.1.6",
+    "watch": "^1.0.1"
+  }
+}

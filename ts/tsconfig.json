@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    "target": "es5",
+    "sourceMap":  true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "outFile": "../scripts/main.js"
+  }
+}
