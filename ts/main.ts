@@ -1,5 +1,8 @@
+import "jquery"
 import TestModule from "modules/testModule"
 
-console.log("start");
-var module = new TestModule();
-module.init();
+$(function(){
+    console.log("start");
+    var module = new TestModule();
+    module.init();
+});
