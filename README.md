@@ -18,3 +18,14 @@ Prequisites:
     *Visual Studio Code is recommended - https://code.visualstudio.com/
     *Plugin for Sublime - https://github.com/Microsoft/TypeScript-Sublime-Plugin
 
+About environment:
+- The project is limited as much as possible to TypeScript, so no grunts, gulps or any kind of bundling or less or any other funny stuff like that
+- AMD had to be used to get everything compiled into a single file by the typescript compiler
+- Added JQuery and it's typings just as an example
+- You need to run a standard npm install
+- If your IDE complains about an older version of TypeScript, update it, should be 2.1.6
+- The typescript project is in the ts/ folder
+- To compile TypeScript run "npm run ts:build" in cmd/terminal
+- To enable watch of TypeScript run "npm run ts:watch" in cmd/terminal
+- To run the node server "npm start"
+- To kill node server close the cmd/terminal window or use whatever your OS supports as the terminate command (Ctrl+c on Windows)
