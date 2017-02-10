@@ -27,5 +27,5 @@ About environment:
 - The typescript project is in the ts/ folder
 - To compile TypeScript run "npm run ts:build" in cmd/terminal
 - To enable watch of TypeScript run "npm run ts:watch" in cmd/terminal
-- To run the node server "npm start"
+- To run the node server "npm start" (the server runs on https://localhost:40001)
 - To kill node server close the cmd/terminal window or use whatever your OS supports as the terminate command (Ctrl+c on Windows)
