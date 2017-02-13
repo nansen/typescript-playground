@@ -3,8 +3,8 @@
   "description": "A setup for the upcoming TS workshop",
   "version": "0.0.1",
   "scripts": {
-    "ts:build": "node ./node_modules/typescript/bin/tsc --p ./ts",
-    "ts:watch": "watch \"npm run ts:build\" ts/"
+    "ts:build": "node ./node_modules/typescript/bin/tsc --p ./ts --pretty || (exit 0);",
+    "ts:watch": "watch \"npm run ts:build --silent\" ts/ || true"
   },
   "repository": {
     "type": "git",
