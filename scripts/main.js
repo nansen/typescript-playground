@@ -24,10 +24,10 @@ define("assignment/b", ["require", "exports", "assignment/a"], function (require
         a.b = new a_1.default;
         a.b.aa = data;
         a.b.aaa = a.b.aa / 2;
-        a.b.a1 = a.b.aaa.toString();
-        a.a1 = a.b.a1;
+        a.b.a = a.b.aaa.toString();
+        a.a = a.b.a;
         a.b.validate = function () {
-            return a.b.a1 === expectedResult;
+            return a.b.a === expectedResult;
         };
         test1(a);
         test2(a);
@@ -35,14 +35,14 @@ define("assignment/b", ["require", "exports", "assignment/a"], function (require
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.default = B;
     function test1(a) {
-        console.log(a.b.a1 === expectedResult ? "Assignment 1: pass" : "Assignment 1: fail");
+        console.log(a.b.a === expectedResult ? "Assignment 1: pass" : "Assignment 1: fail");
     }
     function test2(a) {
         var keyNames = Object.keys(a);
         var index = 0;
         for (var i in keyNames) {
             if (keyNames[i] === "a1") {
-                console.log(a.a1 === expectedResult && a.validate() && a.b.validate() ? "Assignment 2: pass" : "Assignment 2: fail");
+                console.log(a.a === expectedResult && a.validate() && a.b.validate() ? "Assignment 2: pass" : "Assignment 2: fail");
                 return;
             }
             index++;
